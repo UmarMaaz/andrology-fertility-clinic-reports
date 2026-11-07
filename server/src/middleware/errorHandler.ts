@@ -1,0 +1,13 @@
+import { Request, Response, NextFunction } from 'express';
+
+export function errorHandler(err: Error, _req: Request, res: Response, _next: NextFunction): void {
+  const timestamp = new Date().toISOString();
+  console.error(`[${timestamp}] ERROR: ${err.message}`);
+  if (err.stack) console.error(err.stack);
+
+  const statusCode = (err as any).statusCode ?? 500;
+  res.status(statusCode).json({
+    error: err.message || 'Internal Server Error',
+    details: process.env.NODE_ENV === 'production' ? undefined : err.stack,
+  });
+}

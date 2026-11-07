@@ -1,0 +1,6 @@
+{
+  "name": "Andrology & Fertility Clinic - Ultrasound & Diagnostic Reporting System",
+  "description": "Production-grade diagnostic and ultrasound reporting platform for Andrology & Fertility Clinic. Replaces manual Word templates with automated clinical report generation, live letterhead preview, 21+ diagnostic templates, patient management, and one-click print/PDF.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

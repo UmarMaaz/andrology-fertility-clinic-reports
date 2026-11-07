@@ -1,0 +1,14 @@
+node_modules/
+build/
+dist/
+dist-electron/
+release/
+server/dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+*.xlsx
+afc_database_backup_*.json
+.aistudio/
